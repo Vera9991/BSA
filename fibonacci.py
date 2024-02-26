@@ -8,9 +8,17 @@
 
 def counter_of_fibonacci(n):
     index = 0
+    a = 0
+    b = 1
+    c = 0
     while index < n:
         index = index + 1
-        index = (n)
+        c = a + b
+        a = b
+        b = c
+    return c
 
-counter_of_fibonacci(5)
 
+user_input=int(input("введите число"))
+result = counter_of_fibonacci(user_input)
+print(result)
