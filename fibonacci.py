@@ -7,10 +7,10 @@
 #вводим функцию counter_of_fibonacci#
 
 def counter_of_fibonacci(n):
-    counter = 0
-    while counter < n:
-     counter = counter + 1
-     counter = (n)
+    index = 0
+    while index < n:
+        index = index + 1
+        index = (n)
 
 counter_of_fibonacci(5)
 
