@@ -1,22 +1,17 @@
-#находим определение чисел Фибоначчи#
-#вводим переменную number (порядковый номер числа Фибоначчи, вводится пользователем как атрибут функции)#
-#мы должны изменять порядковый номер (number)#
-#нужно посчитать число Фибоначчи, пока number не станет равным переданному в функцию#
+
 #прописываем логику изменения переменной index = 0#
 #index = index + 1, пока index  не равен number (условие цикла)#
 #вводим функцию counter_of_fibonacci#
-
 def counter_of_fibonacci(n):
     index = 0
-    a = 0
-    b = 1
-    c = 0
-    while index < n:
+    a, b = 0, 1
+    index = 2
+
+    while index <= n:
+        a, b=b, a+b
         index = index + 1
-        c = a + b
-        a = b
-        b = c
-    return c
+
+    return b
 
 
 user_input=int(input("введите число"))
